@@ -1,0 +1,53 @@
+body {
+    font-family: arial;
+    background-color: white;
+    font-size: 15px;
+}
+
+img.banner {
+    max-width: 100%;
+    height: 15%
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: blue;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-left: 1px;
+    font-size: 20px;
+    position: relative;
+}
+
+ul li:hover {
+    background-color: green;
+}
+
+ul li ul li {
+    display: none;
+}
+
+ul li:hover ul li {
+    display: block;
+}
+
+textarea {
+    vertical-align: middle;
+}
+
+.link {
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+}
