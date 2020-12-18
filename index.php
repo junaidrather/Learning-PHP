@@ -11,6 +11,24 @@
 </head>
 <body>
     <div class="container-fluid">
+        <!-- Grey with black text -->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./database/index.php">Database</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./form/index.php">Link</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        </nav>
+
         <div class="row">
             <div class="col-sm-6">
                 <h2 class="text-center">Normal Post Form</h2>
