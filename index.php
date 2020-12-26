@@ -21,7 +21,7 @@
             <a class="nav-link" href="./database/index.php">Database</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./form/index.php">Link</a>
+            <a class="nav-link" href="./form_practice.php">Form Practice</a>
             </li>
             <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>

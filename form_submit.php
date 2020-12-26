@@ -1,4 +1,8 @@
 <?php
+echo "<pre>";
+print_r($_POST);
+die("form_submit.php line no 4");
+echo "</pre>";
 
 $fn=$_POST['fname'];
 $ln=$_POST['lname'];
