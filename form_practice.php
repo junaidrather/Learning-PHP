@@ -43,22 +43,21 @@
         <input type="radio" name="gender" value="f"> Female
         
         <label>Course:</label>
-        <select name="stream" size="1">
-			<option>BTECH</option>
-			<option>IMBA</option>
-			<option>MCA</option>
+        <select id="stream" name="stream" size="1" onchange="change_stream();">
+			<option value="BTECH">BTECH</option>
+			<option value="IMBA">IMBA</option>
+			<option value="MCA">MCA</option>
 		</select>
         <label>Subjects:</label>
-        <input type="checkbox" name="subjects[]" value="Web Designing" />Web Designing
-        <input type="checkbox" name="subjects[]" value="Data Communication"/>Data Communication
-        <input type="checkbox" name="subjects[]" value="Database Management Systems"/>Database Management Systems
-        <input type="checkbox" name="subjects[]" value="Artificial Intelligence"/>Artificial Intelligence
+        <div id="subject_div">
+            <input type="checkbox" name="subjects[]" value="Web Designing" />Web Designing
+            <input type="checkbox" name="subjects[]" value="Data Communication"/>Data Communication
+            <input type="checkbox" name="subjects[]" value="Database Management Systems"/>Database Management Systems
+            <input type="checkbox" name="subjects[]" value="Artificial Intelligence"/>Artificial Intelligence    
+        </div>
         </br>
         <label>Comments:</label>
         <textarea name="comments" rows="4" cols="20">Type here...</textarea>
-
-
-
         </pre>
         <div align="center" id="center">
             <input type="submit" name="send" value="Submit" />
@@ -75,7 +74,19 @@
             </div>
         </footer>
     </form>
+<script>
+    function change_stream(){
+        // alert("sdfjsdkjfks");
+        var stream = document.getElementById("stream");
+        //console.log(stream);
+        var selectedValue = stream.options[stream.selectedIndex].text;
+        console.log(selectedValue);
+        if(selectedValue=="MCA"){
+            var sub = document.getElementById("subject_div");
+            sub.innerHTML='<input type="checkbox" name="subjects[]" value="Web Designing" />Web Designing';
+        }
 
-    
+    }
+</script>
 </body>
 </html>
