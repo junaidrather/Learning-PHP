@@ -1,7 +1,7 @@
 <?php
 echo "<pre>";
 print_r($_POST);
-die("form_submit.php line no 4");
+//die("form_submit.php line no 4");
 echo "</pre>";
 
 $fn=$_POST['fname'];
@@ -10,6 +10,8 @@ $address=$_POST['address'];
 $gender=$_POST['gender'];
 $course=$_POST['stream'];
 $subject=implode(',' , $_POST['subjects']);
+
+//print_r($subject); die();
 $comment=$_POST['comments'];
 
 //print_r($_POST);
@@ -18,7 +20,7 @@ $comment=$_POST['comments'];
 $servername='localhost';
 $username='root';
 $password='';
-$dbname='mydb';
+$dbname='junaid_db';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
