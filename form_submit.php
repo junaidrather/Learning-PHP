@@ -15,6 +15,7 @@ $subject=implode(',' , $_POST['subjects']);
 $comment=$_POST['comments'];
 
 //print_r($_POST);
+echo "$subject";
 
 //CREATE DATABASE CONNECTION
 $servername='localhost';
